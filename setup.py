@@ -99,7 +99,7 @@ except (ImportError, LookupError) as e:
         timestamp_str = hex(timestamp_ms)[2:].zfill(16)
         dummy_version = '1!0.0.0.dev0+noscm.' + timestamp_str
 
-        drf_yasg_setup(version=dummy_version)
+        drf_yasg_setup(version='1.21.7')
 
         traceback.print_exc(file=sys.stderr)
         print("failed to detect version, package was built with dummy version " + dummy_version, file=sys.stderr)
